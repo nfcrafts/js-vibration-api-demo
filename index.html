@@ -6,57 +6,8 @@
   <meta name="mobile-web-app-capable" content="yes">
   <title>JS vibration api demo</title>
   <link rel="manifest" href="manifest.json">
-  <link rel="stylesheet" type="text/css" href="http://csshake.surge.sh/csshake.min.css">
-  <style>
-    .button-wrapper {
-      position: absolute;
-      top: 50%;
-      font-size: 35px;
-      line-height: 35px;
-      left: 50%;
-      transform: translateX(-50%) translateY(-50%);
-    }
-
-    .button {
-      
-      cursor: pointer;
-      padding: 20px;
-      text-align: center;
-      background: #E16E76;
-      width: 215px;
-      border: none;
-      outline: none;
-      color: #fff;
-      border-bottom: 5px solid #CD5A62;
-      text-transform: uppercase;
-      transition: border-bottom-width .1s, margin-top .1s;
-      font-family: Roboto, Arial;
-    }
-    .button:active {
-      border-bottom-width: 0;
-      margin-top: 5px;
-    }
-    .button:focus {
-      outline: none !important;
-    }
-  </style>
-  <script>
-    var on = false;
-    function toggle(){
-      if (on) {
-        on = false;
-        document.querySelector(".button").innerHTML = "Turn on";
-        document.querySelector(".button").className = "button"
-      } else {
-        on = true;
-        document.querySelector(".button").innerHTML = "Turn off";
-        document.querySelector(".button").className = "button shake"
-      }
-    }
-    setInterval(function(){
-      if (on) navigator.vibrate(300);
-    }, 300)
-  </script>
+  <link rel="stylesheet" type="text/css" href="css/csshake.min.css">
+  <link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
 <body>
   <div class="button-wrapper">
@@ -64,5 +15,6 @@
       Turn on
     </div>
   </div>
+  <script src="js/main.js"></script>
 </body>
 </html>

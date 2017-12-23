@@ -1,0 +1,31 @@
+.button-wrapper {
+  position: absolute;
+  top: 50%;
+  font-size: 35px;
+  line-height: 35px;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.button {
+  
+  cursor: pointer;
+  padding: 20px;
+  text-align: center;
+  background: #E16E76;
+  width: 215px;
+  border: none;
+  outline: none;
+  color: #fff;
+  border-bottom: 5px solid #CD5A62;
+  text-transform: uppercase;
+  transition: border-bottom-width .1s, margin-top .1s;
+  font-family: Roboto, Arial;
+}
+.button:active {
+  border-bottom-width: 0;
+  margin-top: 5px;
+}
+.button:focus {
+  outline: none !important;
+}
